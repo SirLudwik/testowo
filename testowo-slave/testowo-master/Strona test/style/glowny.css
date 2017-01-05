@@ -1,0 +1,25 @@
+body{
+	background-color: #FFFF95;
+	text-align: justify;
+
+
+	
+}
+h1{
+	background-color: #DDFFFF;
+	color: #00AD00;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: overline underline;
+	
+}
+
+a:hover{
+	color: black;
+}
+
+p{
+	width: 600px;
+	text-indent: 20px;
+	text-shadow: 1px -1px 5px brown;
+}
