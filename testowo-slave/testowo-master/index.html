@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML>
+<html lang=pl>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+</head>
+<body>
+<script type="text/javascript">
+
+//prosze cie bardzo maly update hahahha trololololo xd	
+	
+	var x = parseInt(prompt("Podaj nr opcji z menu (od 1 do 2)"));
+	switch(x){
+		case 1 : 
+		document.write("Wybrałeś/-aś opcje nr 1");
+		break;
+		case 2 : 
+		document.write("Wybrałeś/-aś opcje nr 2");
+		break;
+		default : 
+		document.write("Nie ma takiej opcji w menu!");
+		break;
+	}
+
+
+
+	var a = parseInt(prompt("podaj długość pierwszego boku"));
+	document.write(a + ", ");
+	var b = parseInt(prompt("podaj długość drugiego boku"));
+	document.write(b + ", ");
+	var c = parseInt(prompt("podaj długość trzeciego boku"));
+	document.write(c + ", ");
+	
+		if( (a + b > c) && (c + b > a) && (a + c > b) ){
+		document.write("można zbudować trójkąt <br>");
+		}else{
+		document.write("nie można zbudować trójkąta <br>");
+		}
+	
+	
+	
+
+
+	var a = 12358456;
+	document.write("Działa!!!! :D <br>");
+	document.write(a + "<br>");
+	
+	var b = 18;
+	var c = 18;
+	var d = 18;
+	var wynik = 0;
+	b=c++;
+	document.write(b + "<br>");
+	b=++d;
+	document.write(b + "<br><br><br> Działania na liczbach " + b + " oraz " + c + "<br>");
+	wynik = b + c;
+	document.write("suma " + wynik + "<br>");
+	wynik = b - c;
+	document.write("różnica " + wynik + "<br>");
+	wynik = b * c;
+	document.write("iloczyn " + wynik + "<br>");
+	wynik = b / c;
+	document.write("iloraz " + wynik + "<br>");
+	wynik = Math.pow(b, c);
+	document.write("potęga " + wynik + "<br>");
+	wynik = b % c;
+	document.write("modulo (reszta z dzielenia) " + wynik + "<br><br><br>");
+	
+	var e = 3;
+	var f = 2;
+	
+	
+		if (e == f){
+		document.write(e + " = " + f + "<br>");
+		} else if (e != f){
+		document.write(e + " != " + f + "<br>");
+		}
+	document.write("<br><br><br>");	
+	//skrypt oceniający uczniów
+	var iloscPkt = 50;
+	var ndst = 30;
+	var dop = 50;
+	var dst = 65;
+	var db = 80;
+	var bdb = 90;
+	var cel = 100;
+		
+		if (iloscPkt < ndst) {
+		document.write("Ocena niedostateczna! <br>");
+		} else if (iloscPkt < dop) {
+		document.write("Ocena dopuszczająca! <br>");
+		} else if (iloscPkt < dst) {
+		document.write("Ocena dostateczna! <br>");
+		} else if (iloscPkt < db) {
+		document.write("Ocena dobra! <br>");
+		} else if (iloscPkt < bdb) {
+		document.write("Ocena bardzo dobra! <br>");
+		} else {
+		document.write("Ocena celująca! <br>");
+		}
+	
+
+	
+</script>
+</body>
+</html>
