@@ -1,0 +1,172 @@
+body
+{
+
+	background-color: #66ffff;
+	color: black;
+	margin: 0 !important;
+}
+
+#conteiner
+{
+	width: 100%;
+	
+}
+
+#header
+{
+	width: 100%;
+	padding: 40px 0;
+}
+
+#logo
+{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.nav
+{
+	width: 100%;
+	
+	background-color: #00cc33;
+	text-align: center;
+	border-top: 1px solid #006600;
+	border-bottom: 1px solid #006600;
+}
+
+ol
+{
+	padding: 0;
+	margin:0;
+	list-style-type: none;
+	height: 40px;
+	padding: 15px;
+	line-height: 100%;
+	display: inline-block;
+}
+
+ol a 
+{
+	color: red;
+	text-decoration: none;
+	display: block;
+	
+}
+
+ol > li
+{
+	float: left;
+	width: 200px;
+	height: 30px;
+	border-right: 1px dashed #006600;
+	padding: 10px;
+}
+ol > li:first-child
+{
+	border-left: 1px dashed #006600;
+}
+ol > li:hover
+{
+	background-color: #006633;
+}
+ol > li:hover > a
+{
+	color: white;
+}
+#content
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+#social
+{
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	background-color: #909090;
+}
+
+#socialdivs
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#fb
+{
+	width: 250px;
+	height: 100px;
+	float: left;
+	padding: 45px;
+}
+
+#fb:hover
+{
+	background-color: #4668b3;
+}
+#yt
+{
+	width: 250px;
+	height: 100px;
+	float: left;
+	padding: 45px;
+}
+
+#yt:hover
+{
+	background-color: #d94348;
+}
+#stopka
+{
+	text-align: center;
+	padding: 10px;
+	background-color:#009999;
+	color: white;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+ol > li > ul
+{
+	list-style-type: none;
+	padding:0;
+	margin:0;
+	height: 40px;
+	display: none;
+	
+}
+ol > li:hover > ul
+{
+	display: block;
+	
+}
+ol > li > ul > li
+{
+	background-color:#006633;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #00cc33;
+	padding: 5px 0;
+}
+ol > li > ul > li > a
+{
+	color: white;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: red;
+}
