@@ -48,7 +48,7 @@ h3 {
 	text-align: left;
 	font-size: 18px;
 }
-ol > li > a {
+ul > li > a {
 	color: white;
 	text-decoration: none;
 }
@@ -60,10 +60,10 @@ a:hover {
 	color: #ff0000;
 }
 
-ol > li:hover > a{
+ul > li:hover > a{
 	color: #1ad1ff;
 }
-ol > li {
+ul > li {
 	margin-top: 10px;
 }
 p{
