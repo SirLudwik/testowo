@@ -14,13 +14,13 @@ header{
 }
 
 nav{
-	width: 30%;
+	width: 20%;
 	float: left;
 	background-color:#000000;
 }
 main{
 	min-height: 600px;
-	width: 70%;
+	width: 80%;
 	float: right;
 	background-color: #ccffcc;
 	text-align: center;
@@ -73,7 +73,7 @@ ul > li:hover > a{
 ul > li {
 	height: 60px;
 	display: block;
-	line-height: 50px;
+	line-height: 5px;
 	text-align: center;
 }
 ul > li:hover{
@@ -85,16 +85,6 @@ p{
 	text-align: left;
 }
 
-
-nav ul li p{
-	margin: 0;
-	padding: 0;
-	line-height: 60px;
-	text-align: center;
-	display: inline-block;
-}
-
-
 #opisosob{
 	font-size: 12px;
 }
@@ -104,4 +94,11 @@ nav ul li p{
 }
 #janusze{
 	height: 200px;
+}
+.navi{
+	margin: 0;
+	padding: 0;
+	line-height: 60px;
+	text-align: center;
+	display: inline-block;
 }
