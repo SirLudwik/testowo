@@ -85,12 +85,7 @@ p{
 	text-align: left;
 }
 
-i{
-	display: none;
-}
-i:hover{
-	display: inline;
-}
+
 nav ul li p{
 	margin: 0;
 	padding: 0;
@@ -98,9 +93,7 @@ nav ul li p{
 	text-align: center;
 	display: inline-block;
 }
-nav ul li p:hover{
-	display:none;
-}
+
 
 #opisosob{
 	font-size: 12px;
