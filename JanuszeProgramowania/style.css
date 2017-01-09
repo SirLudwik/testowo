@@ -1,5 +1,6 @@
 body{
 		background-color: #000000;
+		font-family: "Lucida Console";
 }
 header{
 	width: 100%;
@@ -10,10 +11,9 @@ header{
 	background-repeat: no-repeat;
 	background-position: center top;
 	float: left;
-	
 }
 
-aside{
+nav{
 	height: 90%;
 	width: 20%;
 	float: left;
