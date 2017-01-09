@@ -1,0 +1,25 @@
+<html lang=pl>
+<head>
+<meta charset="utf-8" />
+<script type="text/javascript">
+function tlo (kolor){
+		document.bgColor = kolor;
+}
+
+function zmien_tekst(){
+	document.getElementById('blok').innerHTML = "<img src = 'images.jpg'>";
+}
+</script>
+</head>
+
+<body>
+<input type="button" onclick="tlo('#ff0000')" value="R">
+<input type="button" onclick="tlo('#00ff00')" value="G">
+<input type="button" onclick="tlo('#0000ff')" value="B">
+
+<p> ALA MA <b id="blok">KOTA</b></p>
+
+<input type="button" onclick="zmien_tekst()" value="robi coś z kotem :D">
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+ZDARZENIA MYSZY
+
+onClick
+onDblClick
+!!!!!!!!!!!!!!!!!!!!
+onMouseDown - w momencie gdy naciśniemy przycisk myszy
+onMouseUp - w momencie gdy puścimy przycisk myszy
+!!!!!!!!!!!!!!!!!!!!
+onMouseOver
+onMouseMove
+onMouseOut
