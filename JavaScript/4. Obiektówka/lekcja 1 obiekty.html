@@ -1,0 +1,117 @@
+<html lang=pl>
+<head>
+<meta charset="utf-8" />
+<title>Przykładowy tytuł</title>
+<script type="text/javascript">
+//Obiekt string oraz jego metody
+
+//string.length - długość stringu
+/*
+var zdanie = "Ala ma kota";
+document.write(zdanie.length);	
+*/
+
+
+//string.charAt(0) - zwraca pojedynczy znak z wyznaczonego miejsca w stringu
+/*
+var zdanie = "Ala ma kota";
+document.write(zdanie.charAt(2));	
+*/
+
+//string.substring(a,b) - zwraca znaki, która znajdują się pomiędzy pozycją a , a pozycją b w stringu
+/*
+var zdanie = "Ala ma kota";
+document.write(zdanie.substring(4,6));	
+*/
+/*
+var zdanie = "Ala ma kota";
+document.write(zdanie.substring(7));	// < -- wyświetla od 7 znaku do końca
+*/
+
+//string.toLowerCase() - zamienia wszystkie znaki na małe litery
+/*
+var zdanie = "Ala ma kota";
+document.write(zdanie.toLowerCase());	
+*/
+
+//string.toUpperCase() - zamienia wszystkie znaki na duże litery
+/*
+var zdanie = "Ala ma kota";
+document.write(zdanie.toUpperCase());	
+*/
+
+//metody można łączyć
+/*
+var zdanie = "Ala ma kota";
+document.write(zdanie.substring(4, 6).toUpperCase());
+*/
+
+
+//zadanie - wyświetlić alA MA Kota
+/*
+var zdanie = "Ala ma kota";
+document.write(zdanie.substring(0, 2).toLowerCase() + zdanie.substring(2, 8).toUpperCase() + zdanie.substr(8).toLowerCase());
+*/
+/*
+function zdanie(a){
+	return  a.substring(0, 2).toLowerCase() + a.substring(2, 8).toUpperCase() + a.substr(8).toLowerCase();	
+}
+
+var z = "Ala ma kota";
+document.write(zdanie(z));
+*/
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//tworzenie własnej metody. deklarujemy typ (tutaj String), później kropka i prototype, znowu kropka nazwa metody (zaczynamy z małej, ale kazdy kolejny wyraz w nazwie
+//z dużej np .toLowerCase !!!return w takiej metodzie jest obowiązkowe!!!
+/*
+String.prototype.duzeA = function () {
+	return  this.substring(0, 2).toLowerCase() + this.substring(2, 8).toUpperCase() + this.substr(8).toLowerCase();	
+}
+
+	var z = "Ala ma kota";
+	document.write(z.duzeA());
+	
+*/
+
+// ćwiczenie
+/*
+String.prototype.duzeA = function() {
+
+var temp = "";
+
+	for (var i = 0; i < this.length; i++){
+	
+		if ((this.charAt(i) == "a") || (this.charAt(i) == "A")){
+		temp += this.charAt(i).toUpperCase();
+		} else {
+		temp += this.charAt(i).toLowerCase();
+		}
+	}
+	return temp;
+}
+
+	var z = "Ala ma kota";
+	document.write(z.duzeA());
+*/
+
+//metody obiektu document
+//document.URL - pokazuje adres strony na której się aktualnie znajdujemy, raczej nie edytujemy
+//document.title - pokazuje co się znajduje w pomiędzy tagami <title></title>
+//document.bgColor <-- kolor tła
+//document.fgColor <-- kolor czcionki
+//document.alinkColor <-- kolor linka, jeżeli kliknąłeś na link, ale nie puściłeś przycisku myszy
+//document.vlinkColor <-- kolor linka, jeżeli stronę już kiedyś odwiedziliśmy
+//window.innerHeight <-- jaką wysokość ekranu w pikselach ma użytkownik
+//window.innerWidth <-- jaką szerokość ekranu w pikselach ma użytkownik
+//close(); <--  zamyka kartę/okno przeglądarki
+
+
+
+</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

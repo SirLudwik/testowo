@@ -1,0 +1,118 @@
+<html lang=pl>
+<head>
+<meta charset="utf-8" />
+<script type="text/javascript">
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*
+function suma (a,b) {
+	return a + b;
+}
+
+
+ document.write(suma(2,8));
+*/
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// dwie metody deklarowania tablic w JS, przykład 5-cio elementowej tablicy
+/*
+	var nazwa_tablicy = new Array(5);
+	var nazwa_tablicy = [5];
+*/
+// odwoływanie się do zmiennych w tablicy
+/*
+	var tablica = ["Marcin", "Adam", "Marta"];
+
+	document.write(tablica[1]);
+*/	
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// pobiera od użytkownika 10 liczb, zapisuje w tablicy i je sumuje
+/*
+	var a = [];
+	var b;
+	var suma = 0;
+	for (var i = 0; i < 10; i++){
+	
+
+		a[i] = parseInt(prompt("podaj liczbę nr " + (i + 1)));
+		document.write(a[i] + "<br>");
+		
+		
+	}
+	for(var k = 0; k < 10; k++){
+		
+		suma += a[k];
+	
+	}
+	document.write("-------------------------<br>" + suma + "     <--- suma");
+*/	
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// przy funkcji z niezadeklarowanymi zmiennymi tworzy się tablica "arguments", która przechowuje zmienne podane przez użytkownika
+/*
+function Suma(){
+var c = arguments.length;
+suma = 0;
+
+	for(var i = 0; i < c; i++){
+		suma += arguments[i];
+	}
+	
+	return suma;
+}	
+	
+	
+	document.write(Suma(1, 2, 3));
+*/	
+	
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Rekurencja. Pobierz od użytkownika dane "ile liczb ciągu fibonacciego wyświetlić", wyświtl je na ekranie. Stwórz funkcję ciąg.
+/*
+function ciag (a){
+
+	var c = 1;
+	var b = 1;
+	var suma = 0;	
+	
+		if (a == 1){
+			document.write("1");
+		} 
+		else if (a == 2){
+			document.write("1<br>1");
+		}
+		else {
+			document.write("1<br>1<br>");
+				for (var i = 2; i < a; i++){			
+					suma = c+b;
+					c = b;
+					b = suma;
+					suma = 0;
+					document.write(b + "<br>");
+					}
+		}	
+} 
+
+	var wybor = parseInt(prompt("Podaj ile liczb ciągu Fibonacciego mam Ci wyświetlić"));
+	ciag(wybor);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+</script>
+</head>
+
+<body>
+</body>
+
+</html>
