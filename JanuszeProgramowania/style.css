@@ -17,6 +17,7 @@ nav{
 	width: 20%;
 	float: left;
 	background-color:#000000;
+
 }
 main{
 	min-height: 600px;
@@ -79,11 +80,17 @@ ul > li {
 ul > li:hover{
 	cursor: pointer;
 }
+
+ul{
+	
+	position: fixed;
+}
 p{
 	margin-left: 10px;
 	margin-right: 10px;
 	text-align: left;
 }
+
 
 #opisosob{
 	font-size: 12px;
