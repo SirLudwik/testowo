@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+<meta charset="utf-8"  />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" type="text/css" href="style/glowny.css">
+<link rel="stylesheet" type="text/css" href="css/fontello.css">
+<title>JANUSZE PROGRAMOWANIA</title>
+<script type="text/javascript" src="skrypty_nav.js"></script>
+
+<meta name="description" content="Serwis dla wszystkich, którzy chcą, a jeszcze nie mogą programować!" />
+<meta name="keywords" content="" />
+
+</head>
+<body>
+<div id="container">
+<!-- pojemnik header, w nim znajduje się logo strony -->
+	<div id="header">
+		<div id="logo">
+		<img src="grafiki/header.jpg" style="float: left;" />
+		<div style="clear: both;"></div>
+		</div>
+	</div>
+	<!-- pojemnik nav to przyklejane, rozwijane menu z nawigacją strony -->
+<div class="nav_wrapper">
+	<div class="nav">
+			<ol>
+				<li><a href="#"><b>STRONA GŁÓWNA</b></a></li>
+				<li><a href="#"><b>WARTO PROGRAMOWAĆ?</b></a></li>
+				<li><a href="#"><b>PODSTAWOWE POJĘCIA</b></a></li>
+				<li><a href="#"><b>JĘZYKI</b></a></li>
+				<li><a href="#"><b>O NAS</b></a></li>
+				<li><a href="#"><b>KONTAKT</b></a></li>
+			</ol>
+	</div>
+</div>
+	<!-- pojemnik content z treścią właściwą danej podstrony -->
+	<div id="content">
+	<h1>!!!WITAJ!!!</h1>
+	
+	<p>Witaj na stronie poświęconej łopatologicznej nauce programowania. Znajdziesz tu odpowiedzi na pytania, które sobie zadawałeś/-aś, a które wydawały Ci się śmieszne.</p>
+	<p>Uwierz nam, żadne z tych pytań, choćby nie wiadomo jak absurdalne, nie jest śmieszne.</p>
+	<p>Masz dość niezrozumiałego słownictwa? Masz dość ludzi mówiących językiem programisty, którzy uwarzają, że wszystko jest tak oczywiste, iż niepojętym jest aby czegoś nie pojąć? </p>
+	<p>Jeśli tak, to trafiasz na idelane miejsce w sieci dla Ciebie!</p>
+	<p>Na start krótki filmik pana Mirosława Zelenta, który powie jakie są najczęściej popełniane błędy podczas nauki programowania</p>
+	
+	<br><br>
+	
+	<center>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/nXwDEL-ivis?rel=0" frameborder="0" allowfullscreen></iframe>
+	</center>
+	</div>
+	<!-- pojemniki na kafelki z linkiem do portali społecznościowych -->
+	<div id="social">
+		<div id="socialdivs">
+			<div id="fb"><i class="icon-facebook-squared"></i></div>
+			<div id="yt"><i class="icon-youtube-squared"></i></div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+	<div id="stopka">januszeprogramowania.pl &copy; </div>
+	
+</div>
+<!-- skrypt przyklejający nwigację do góry ekrany prz przewijaniu strony -->
+<script src="jquery.js"> </script>
+<script>
+
+$(document).ready(function() {
+   var stickyNavTop = $('.nav').offset().top;
+
+   var stickyNav = function(){
+   var scrollTop = $(window).scrollTop();
+
+   if (scrollTop > stickyNavTop) { 
+      $('.nav').addClass('sticky');
+   } else {
+      $('.nav').removeClass('sticky');
+    }
+   };
+
+   stickyNav();
+
+   $(window).scroll(function() {
+      stickyNav();
+   });
+   });
+
+</script>
+
+</body>
+</html>

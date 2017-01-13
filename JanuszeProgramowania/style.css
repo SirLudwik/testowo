@@ -2,6 +2,7 @@ body {
   
 }
 
+<<<<<<< HEAD
 .header {
  // background-image: url("https://stormideaswus.blob.core.windows.net/headerjunction/2014/91/d63adef3-99cf-411a-b2e3-e99a3e8e82e9.jpg");
   background-color: black;
@@ -40,3 +41,101 @@ body {
  #testinguje a:hover{
    color: black;
  }
+=======
+nav{
+	width: 20%;
+	float: left;
+	background-color:#000000;
+
+}
+main{
+	min-height: 600px;
+	width: 80%;
+	float: right;
+	background-color: #ccffcc;
+	text-align: center;
+	
+}
+center{
+	padding: 30px 0;
+}
+article{
+	width: 80%;
+	margin: 0 auto;
+}
+footer{
+	clear: both;
+	height: 10%;
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+h1{
+	font-size: 80px;
+	color: #000000;
+	text-align: center;
+	
+}
+h2 {
+	text-align: center;
+	
+}
+h3 {
+	text-align: left;
+	font-size: 18px;
+}
+ul > li > a {
+	color: white;
+	text-decoration: none;
+	display:block;
+}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff0000;
+}
+
+ul > li:hover > a{
+	color: #1ad1ff;
+}
+ul > li {
+	height: 60px;
+	display: block;
+	line-height: 5px;
+	text-align: center;
+}
+ul > li:hover{
+	cursor: pointer;
+}
+
+ul{
+	
+	position: fixed;
+}
+p{
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+
+#opisosob{
+	font-size: 12px;
+}
+#avatar{
+	width: 100px;
+	height: 100px;
+}
+#janusze{
+	height: 200px;
+}
+.navi{
+	margin: 0;
+	padding: 0;
+	line-height: 60px;
+	text-align: center;
+	display: inline-block;
+}
+>>>>>>> 52b7c852dd78f5c090aae89bb131a07e54b91c40
