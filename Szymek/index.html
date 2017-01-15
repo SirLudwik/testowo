@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Janusze Programowania</title>
+<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="pageWrapper">
+	<header>
+		<div class="logo"><img src="photo/header.jpg" alt="logo"></div>
+		<div class="navWrapper">
+			<div class="toggleMenu">MENU</div>
+			<nav class="horizontalNav">
+				<ul class="nav">
+					<li><a href="#">Strona główna</a></li>
+					<li><a href="#">Czy warto programować?</a></li>
+					<li><a href="#">Podstawowe pojęcia</a></li>
+					<li><a href="#">Języki</a></li>
+					<li><a href="#">O nas</a></li>
+					<li><a href="#">Kontakt</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="contentWrapper">
+		<div class="columnWrapper">
+			<main class="mainContent">
+				<h2>treść głowna </h2>
+				<article>
+					Etiam vitae blandit urna. In hac habitasse platea dictumst. Suspendisse felis turpis, varius eget libero ac, consectetur placerat lacus. Vestibulum rutrum nec ipsum at tincidunt. Etiam vel sollicitudin purus. Donec ut iaculis diam, eu tincidunt arcu. Aenean ut pretium erat, vitae ornare dolor. Vestibulum dictum erat et dictum finibus. Sed feugiat vestibulum lacus, a pulvinar ante scelerisque vitae. Curabitur aliquet nibh at ligula scelerisque molestie. In commodo lectus a mauris ornare, at vehicula velit finibus. Phasellus ornare pulvinar sem, at rhoncus turpis mollis nec. Sed sed nunc feugiat, euismod leo a, mollis massa.
+					Sed sit amet odio scelerisque, eleifend lectus vel, tempor nunc. Duis ornare ultrices erat vehicula fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ultricies dolor faucibus viverra lacinia. Cras semper dignissim egestas. Curabitur arcu elit, iaculis elementum tincidunt eget, pharetra ac nisi. Quisque malesuada augue nec risus egestas, vestibulum porttitor orci elementum. Morbi dictum id mi sit amet pellentesque. Nunc sed mollis sem. Etiam iaculis fermentum nibh, nec ultricies sapien malesuada nec. Praesent semper arcu ante. Nullam dignissim nunc mi, id maximus dolor malesuada quis.
+					<div class="videoWrapper">
+						<iframe width="560" height="349" src="https://www.youtube.com/embed/1M0YXFW31hg?list=PLOYHgt8dIdox9Qq3X9iAdSVekS_5Vcp5r" frameborder="0" allowfullscreen>Twoja przeglądarka nie obsługuje tego filmu! Aby obejrzeć zmień przeglądarkę lub udaj się bezpośrednio na stronę YouTube:[<a href="https://www.youtube.com/watch?v=1M0YXFW31hg&list=PLOYHgt8dIdox9Qq3X9iAdSVekS_5Vcp5r">link</a>]</iframe>
+					</div>
+				</article>
+			</main>
+			<aside class="leftSidebar sidebar">
+				<h3>treść leftSidebar</h3>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tortor justo, luctus id ante id, accumsan sagittis libero. Nullam consectetur sit amet purus quis suscipit. Vivamus id sapien ligula. Donec at mi nulla. Morbi mauris neque, aliquet at nisi vel, efficitur consectetur tellus. Etiam nec auctor quam. 
+			</aside>
+		</div>
+		<aside class="rightSidebar sidebar">
+			<h3>treść rightSidebar</h3>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tortor justo, luctus id ante id, accumsan sagittis libero. Nullam consectetur sit amet purus quis suscipit. Vivamus id sapien ligula. Donec at mi nulla. Morbi mauris neque, aliquet at nisi vel, efficitur consectetur tellus. Etiam nec auctor quam.
+		</aside>
+	</div>
+	<footer>
+		<p>&copy; 2017, Janusze Programowania </p>
+		<p>Kontakt: <a href="mailto:januszeprogramowania@gmail.com">januszeprogramowania@gmail.com</a></p>
+	</footer>
+</div>
+<script src="jquery.js"> </script>
+<script>
+$(document).ready(function() {
+   var stickyNavTop = $('.horizontalNav').offset().top;
+   var stickyNav = function(){
+	   var scrollTop = $(window).scrollTop();
+			if (scrollTop > stickyNavTop) { 
+			  $('.horizontalNav').addClass('sticky');
+			  $('.navWrapper').addClass('navWrapperSticky');
+		   } else {
+			  $('.horizontalNav').removeClass('sticky');
+			  $('.navWrapper').removeClass('navWrapperSticky');
+			}
+   };
+   stickyNav();
+   $(window).scroll(function() {
+      stickyNav();
+   });
+		$(".toggleMenu").click(function(){
+			$('.nav').slideToggle();
+		});
+   });
+</script>
+</body>
+</html>
