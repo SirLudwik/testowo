@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -59,12 +59,14 @@ $(document).ready(function() {
    var stickyNavTop = $('.horizontalNav').offset().top;
    var stickyNav = function(){
 	   var scrollTop = $(window).scrollTop();
-			if (scrollTop > stickyNavTop) { 
-			  $('.horizontalNav').addClass('sticky');
+			if (scrollTop > stickyNavTop) {
 			  $('.navWrapper').addClass('navWrapperSticky');
+			  $('.toggleMenu').addClass('sticky');
+			  $('.horizontalNav').addClass('stickyToggleMenu');
 		   } else {
-			  $('.horizontalNav').removeClass('sticky');
-			  $('.navWrapper').removeClass('navWrapperSticky');
+		   	  $('.navWrapper').removeClass('navWrapperSticky');
+			  $('.toggleMenu').removeClass('sticky');
+			  $('.horizontalNav').removeClass('stickyToggleMenu');
 			}
    };
    stickyNav();
@@ -78,3 +80,4 @@ $(document).ready(function() {
 </script>
 </body>
 </html>
+

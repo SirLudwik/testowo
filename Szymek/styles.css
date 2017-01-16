@@ -55,13 +55,15 @@ ul.nav a {
 .toggleMenu {
 	display: none;
 	width: 100%;
+	padding: 5px 15px 5px 15px;
 	font-size: 1.8em;
-	line-height: 50px;
+	line-height: 51px;
 	text-align: center;
 	color: #009900;
 	background-color: #eaeaea;
 	cursor: pointer;
 	border-bottom:1px dashed grey;
+	z-index: 101;
 }
 /*====================== sticky nav styles =====================*/
 .navWrapperSticky {
@@ -73,7 +75,11 @@ ul.nav a {
 }
 .sticky {
 	position: fixed;
-	top:0;
+	top:0px;
+}
+.stickyToggleMenu {
+	position: fixed;
+	top:62px;
 }
 /*================== main content styles ====================*/
 .contentWrapper {
@@ -139,8 +145,17 @@ footer p {
 footer a{
 	color: #009900;
 }
-/*========================= 481px to 768px ===================*/
-@media (min-width: 481px) and (max-width: 768px) {
+/*====================== min width >= 856px ====================*/
+@media (min-width: 856px) {
+	ul {
+		display: block!important;
+	}
+	.stickyToggleMenu {
+		top:0;
+	}
+}
+/*========================= 481px to 855px ===================*/
+@media (min-width: 481px) and (max-width: 855px) {
 	.toggleMenu {
 		display: block;
 }
@@ -215,7 +230,6 @@ footer a{
 		width: 100%;
 		border-right: none;
 		border-left: none;
-		border-top: 2px solid lightgrey;
 	}
 }
 
