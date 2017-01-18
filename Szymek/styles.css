@@ -75,11 +75,16 @@ ul.nav a {
 }
 .sticky {
 	position: fixed;
-	top:0px;
+	top:0;
 }
 .stickyToggleMenu {
 	position: fixed;
 	top:62px;
+}
+.toggleMenuWrapper {
+	display: none;
+	width: 100%;
+	height: 62px;
 }
 /*================== main content styles ====================*/
 .contentWrapper {
@@ -153,16 +158,27 @@ footer a{
 	.stickyToggleMenu {
 		top:0;
 	}
+	.mediaLogo_1 {
+		display: block;
+	}
+	.mediaLogo_2 {
+		display: none;
+	}
 }
 /*========================= 481px to 855px ===================*/
 @media (min-width: 481px) and (max-width: 855px) {
 	.toggleMenu {
 		display: block;
-}
+		position: fixed;
+		top: 0;
+	}
+	.toggleMenuWrapper{
+		display: block;
+	}
 	ul.nav li {
 		width: 100%;
 		display: block;
-}
+	}
 	ul.nav a {
 		font-size: 1.4em;
 		width: 100%;
@@ -171,6 +187,12 @@ footer a{
 	}
 	.nav {
 		display: none;
+	}
+	.navWrapper {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
 	}
 	.rightSidebar {
 		clear: both;
@@ -190,10 +212,21 @@ footer a{
 		width: 70%;
 		border-right: none;
 	}
+	.mediaLogo_1 {
+		display: none;
+	}
+	.mediaLogo_2 {
+		display: block;
+	}
 }
 /*============================ max width 480px ==================*/
 @media (max-width: 480px) {
 	.toggleMenu {
+		display: block;
+		position: fixed;
+		top: 0;
+	}
+	.toggleMenuWrapper{
 		display: block;
 	}
 	ul.nav li {
@@ -208,6 +241,12 @@ footer a{
 	}
 	.nav {
 		display: none;
+	}
+	.navWrapper {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
 	}
 	.rightSidebar {
 		clear: both;
@@ -230,6 +269,12 @@ footer a{
 		width: 100%;
 		border-right: none;
 		border-left: none;
+	}
+	.mediaLogo_1 {
+		display: none;
+	}
+	.mediaLogo_2 {
+		display: block;
 	}
 }
 
